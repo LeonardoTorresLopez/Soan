@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "5627375715",
+    "firebase_url": "https://soan-b0aee.firebaseio.com",
+    "project_id": "soan-b0aee",
+    "storage_bucket": "soan-b0aee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5627375715:android:12ce86ed46de9ef3",
+        "android_client_info": {
+          "package_name": "com.example.leonardo.soan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5627375715-f3mjs17b4v6fde5vad7500hrs97u0fsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9E4gyc-d6p7ODoHVQ0nJGSPodicz7xew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
