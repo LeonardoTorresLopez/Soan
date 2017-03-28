@@ -21,4 +21,86 @@
 
         >
     </android.support.design.widget.TabLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutTab"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10px"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titulo"
+            android:text="Pregunta 1"
+            android:textSize="18pt"
+            android:paddingBottom="10px"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal"
+            android:overScrollMode="ifContentScrolls"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="100px"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/titulo"
+            >
+
+            <RadioButton
+                android:id="@+id/R1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:text="Respuesta 1"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="10px"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"
+                android:buttonTint="@color/colorAccent"
+                />
+
+            <RadioButton
+                android:id="@+id/R2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="10px"
+                android:text="Respuesta 2"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@color/colorAccent"
+                />
+
+            <RadioButton
+                android:id="@+id/R3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="10px"
+                android:text="Respuesta 3"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@color/colorAccent"
+                />
+
+            <RadioButton
+                android:id="@+id/R4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="10px"
+                android:text="Respuesta 4"
+                android:buttonTint="@color/colorAccent"
+                />
+
+
+        </RadioGroup>
+    </RelativeLayout>
 </LinearLayout>
