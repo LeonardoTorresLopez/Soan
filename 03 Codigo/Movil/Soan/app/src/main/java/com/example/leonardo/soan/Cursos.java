@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 
 /**
@@ -17,6 +18,8 @@ public class Cursos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.asignacion);
+        WebView wbCursos = (WebView)findViewById(R.id.WVCursos);
+        wbCursos.loadUrl("http://www.agirregabiria.net/g/sylvainaitor/principito.pdf");
         Button mButonCurso = (Button)findViewById(R.id.buttonUnidad);
         mButonCurso.setOnClickListener(new View.OnClickListener() {
             @Override

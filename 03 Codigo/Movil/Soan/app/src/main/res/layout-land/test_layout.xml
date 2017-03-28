@@ -52,31 +52,31 @@
             android:layout_below="@+id/titulo"
             >
 
+              <RadioButton
+            android:id="@+id/R1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:text="Respuesta 1"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="10px"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"
+            android:buttonTint="@color/colorAccent"
+            />
+               
             <RadioButton
-                android:id="@+id/R1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12pt"
-                android:text="Respuesta 1"
-                android:layout_marginBottom="15px"
-                android:layout_marginLeft="10px"
-                android:onClick="onRadioButtonClicked"
-                android:checked="true"
-                android:buttonTint="@color/colorAccent"
-                />
-
-            <RadioButton
-                android:id="@+id/R2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12pt"
-                android:layout_marginBottom="15px"
-                android:layout_marginLeft="10px"
-                android:text="Respuesta 2"
-                android:onClick="onRadioButtonClicked"
-                android:buttonTint="@color/colorAccent"
-                />
-
+            android:id="@+id/R2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="10px"
+            android:text="Respuesta 2"
+            android:onClick="onRadioButtonClicked"
+            android:buttonTint="@color/colorAccent"
+            />  
+               
             <RadioButton
                 android:id="@+id/R3"
                 android:layout_width="wrap_content"

@@ -95,5 +95,23 @@
 
 
         </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:id="@+id/TVCalif"
+            />
+
             </LinearLayout>
+    <Button
+        android:id="@+id/BtnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:background="@drawable/btn_redondo"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        android:enabled="false"
+        />
 </LinearLayout>
