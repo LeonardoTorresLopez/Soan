@@ -2,6 +2,9 @@ package com.example.leonardo.soan.http;
 
 import android.util.Log;
 
+import org.springframework.http.converter.xml.SimpleXmlHttpMessageConverter;
+import org.springframework.web.client.RestTemplate;
+import com.example.leonardo.soan.model.alumnoJson;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -16,29 +19,18 @@ public class HttpRetriever {
      * @return El contenido del HTTP response.
      */
     public String retrieve(String url) {
-        URL uUrl;
-        HttpURLConnection urlConnection = null;
-        InputStream in;
+        String nodo="";
         try {
-            uUrl = new URL(url);
-            urlConnection = (HttpURLConnection) uUrl.openConnection();
-            in = urlConnection.getInputStream();
+            RestTemplate restTemplate = new RestTemplate();
+            restTemplate.getMessageConverters().add(new SimpleXmlHttpMessageConverter());
 
-            Scanner scanner = new Scanner(in);
-            scanner.useDelimiter("\\A");
+            alumnoJson alumno = restTemplate.getForObject(url, alumnoJson.class);
+            return alumno.Json;
 
-            boolean hasInput = scanner.hasNext();
-            if (hasInput) {
-                return scanner.next();
-            } else {
-                return null;
-            }
         } catch(Exception ex){
             Log.e("EXCEPCION", "Método Retrieve" + ex.getMessage());
             return null;
-        } finally {
-            if(urlConnection != null)
-                urlConnection.disconnect();
         }
+
     }
 }

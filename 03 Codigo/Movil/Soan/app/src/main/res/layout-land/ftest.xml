@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrad">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo"
+        android:text="Pregunta 1"
+        android:textSize="40px"
+        android:paddingBottom="10px"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <RadioButton
+        android:id="@+id/R1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respuesta 1"
+        android:onClick="onRadioButtonClicked"/>
+           
+          <RadioButton
+        android:id="@+id/R2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respuesta 2"
+        android:onClick="onRadioButtonClicked"/>  
+       
+        <RadioButton
+            android:id="@+id/R3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 3"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/R4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 4"
+            android:onClick="onRadioButtonClicked"/>
+
+
+    </RadioGroup>
+
+</LinearLayout>
